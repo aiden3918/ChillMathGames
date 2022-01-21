@@ -156,6 +156,8 @@ a:hover {text-decoration: underline;}
     padding: 10px;
 }
 
+#winnerMsg {display: none;}
+
 .play-again, .guess-box, .used-words, .hint, .guesses, .custom-lives, .hangman-guy { /*some hangman as well*/
     display: flex;
     justify-content: center;
