@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="aiden li">
+    <meta name="description" content="aidens games">
+    <meta name="keywords" content="games minigames aiden fun">
+    <link rel="icon" type="image/png" href="/images/controllerfavicon.png">
+    <title>Tic-Tac-Toe - CMG</title>
+</head>
+<body>
+    <noscript>This website requires javascript to run. Please install javascript and try again.</noscript>
+    <header>
+        <div class="return-to-index">
+            <a href="index.htm" class="rti-icon">&#8617;</a><a href="index.htm"> Back to Home</a>
+        </div>
+    </header>
+    <main>
+        <h3 class="game-title">Tic-Tac-Toe</h3>
+        <div class="score">
+            <span>X's Score: <span id="x-score"></span></span>
+            <span>O's Score: <span id="o-score"></span></span>
+        </div>
+        <div class="winner">
+            <p id="winnerMsg"><b></b></p>
+        </div>
+        <div class="game-board">
+            <table class="game-board-table">
+                <tr>
+                    <td class="game-board-cell" id="cell1"></td>
+                    <td class="game-board-cell" id="cell2"></td>
+                    <td class="game-board-cell" id="cell3"></td>
+                </tr>
+                <tr>
+                    <td class="game-board-cell" id="cell4"></td>
+                    <td class="game-board-cell" id="cell5"></td>
+                    <td class="game-board-cell" id="cell6"></td>
+                </tr>
+                <tr>
+                    <td class="game-board-cell" id="cell7"></td>
+                    <td class="game-board-cell" id="cell8"></td>
+                    <td class="game-board-cell" id="cell9"></td>
+                </tr>
+            </table>
+        </div>
+        <div class="turn">
+            <p>Current Turn: <span id="current-turn"></span></p>
+        </div>
+        <div class="play-again">
+            <button id="play-again">Play Again</button>
+        </div>
+        <div class="about-game">
+            <p>
+                Tic-tac-toe is a game where 2 players play on a 3x3 board. Each player takes turns either placing X's or O's on the board.
+                Match 3 X's or O's across the board either horizontally, vertically, or diagonally to win!
+            </p>
+            <p>
+                Unfortunately, there is no AI to play against, because I am too dumb to code one. However, I hope you have fun with your 
+                friends playing tic-tac-toe on FunkyArithmeticGames!
+            </p>
+            <p><i>Note: X always starts first.</i></p>
+        </div>
+    </main>
+    <footer>
+        <p>I don't really have anything to put here, and this is supposed to be a footer, but here you go :)</p>
+    </footer>
+    <script src="/javascript/tictactoe.js"></script>
+</body>
+</html>

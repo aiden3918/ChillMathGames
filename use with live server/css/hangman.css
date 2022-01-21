@@ -1,0 +1,149 @@
+#hangman-icon1 {
+    background-color: aliceblue;
+    width: 10vw;
+    height: 0.5vw;
+}
+
+#hangman-icon2 {
+    background-color: aliceblue;
+    width: 0.5vw;
+    height: 15vw;
+    position: relative;
+    right: 5.25vw;
+}
+
+#hangman-icon3 {
+    background-color: aliceblue;
+    width: 8vw;
+    height: 0.5vw;
+    position: relative;
+    bottom: 15vw;
+    right: 5.75vw;
+}
+
+#hangman-icon4 {
+    background-color: aliceblue;
+    width: 0.5vw;
+    height: 3vw;
+    position: relative;
+    bottom: 12.5vw;
+    right: 5.75vw;
+}
+
+#hangman-icon5 {
+    width: 2vw;
+    height: 2vw;
+    position: relative;
+    border: 0.5vw solid aliceblue;
+    border-radius: 2vw;
+    right: 7.5vw;
+    bottom: 10vw;
+    background-color: #121014;
+}
+
+#hangman-icon6 {
+    background-color: aliceblue;
+    width: 0.5vw;
+    height: 5vw;
+    position: relative;
+    right: 9.25vw;
+    bottom: 5.5vw;
+}
+
+#hangman-icon7 {
+    background-color: aliceblue;
+    width: 0.5vw;
+    height: 2.5vw;
+    position: relative;
+    right: 10.5vw;
+    bottom: 7.5vw;
+    transform: rotate(45deg);
+}
+
+#hangman-icon8 {
+    background-color: aliceblue;
+    width: 0.5vw;
+    height: 2.5vw;
+    position: relative;
+    right: 9.5vw;
+    bottom: 7.5vw;
+    transform: rotate(135deg);
+}
+
+#hangman-icon9 {
+    background-color: aliceblue;
+    width: 0.5vw;
+    height: 2vw;
+    position: relative;
+    right: 11.4vw;
+    bottom: 4vw;
+    transform: rotate(45deg);
+}
+
+#hangman-icon10 {
+    background-color: aliceblue;
+    width: 0.5vw;
+    height: 2vw;
+    position: relative;
+    right: 10.6vw;
+    bottom: 4vw;
+    transform: rotate(135deg);
+}
+
+#hangman-icon11 {
+    width: 0.25vw;
+    height: 0.25vw;
+    position: relative;
+    border-radius: 0.25vw;
+    right: 12vw;
+    bottom: 11.75vw;
+    background-color: aliceblue;
+}
+
+#hangman-icon12 {
+    width: 0.25vw;
+    height: 0.25vw;
+    position: relative;
+    border-radius: 0.25vw;
+    right: 11.5vw;
+    bottom: 11.75vw;
+    background-color: aliceblue;
+}
+
+#hangman-icon13 {
+    width: 0.5vw;
+    height: 0.5vw;
+    position: relative;
+    border-radius: 0 0 0.25vw 0.25vw;
+    right: 12.25vw;
+    bottom: 10.9vw;
+    background-color: aliceblue;
+}
+
+#hangman-icon14 {
+    background-color: aliceblue;
+    width: 0.5vw;
+    height: 1vw;
+    position: relative;
+    right: 14.25vw;
+    bottom: 4vw;
+    transform: rotate(120deg);
+}
+
+#hangman-icon15 {
+    background-color: aliceblue;
+    width: 0.5vw;
+    height: 1vw;
+    position: relative;
+    right: 11.75vw;
+    bottom: 4vw;
+    transform: rotate(60deg);
+}
+
+@media screen and (max-width: 1100px) {
+    .hangman-guy {transform: scale(1.5); margin: 10vw; left: 5vw;}
+}
+
+@media screen and (max-width: 750px) {
+    .hangman-guy {transform: scale(2.5); margin: 15vw; left: 9vw;}
+}

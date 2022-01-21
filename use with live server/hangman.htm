@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/hangman.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="aiden li">
+    <meta name="description" content="aidens games">
+    <meta name="keywords" content="games minigames aiden fun">
+    <link rel="icon" type="image/png" href="/images/controllerfavicon.png">
+    <title>Hangman - CMG</title>
+</head>
+<body>
+    <noscript>This website requires javascript to run. Please install javascript and try again.</noscript>
+    <header>
+        <div class="return-to-index">
+            <a href="index.htm" class="rti-icon">&#8617;</a><a href="index.htm"> Back to Home</a>
+        </div>
+    </header>
+    <main>
+        <h3 class="game-title">Hangman</h3>
+        <!--Pregame settings-->
+        <div class="pregame-options" id="pregame-options">
+            <p class="pregame-title"><b>Pregame Settings</b></p>
+            <!--Random word or nah-->
+            <div class="word-settings">
+                <span class="individual-option">
+                    <input type="radio" name="word-seting" value="random-word" class="word-setting" id="random-word" checked>
+                    <label for="random-word">Random Word</label>
+                </span>
+                <input type="radio" name="word-seting" value="custom-word" class="word-setting" id="custom-word">
+                <label for="custom-word">Custom Word</label>
+                <input type="text" class="word-setting" id="custom-word-input" placeholder="Enter custom word(s) here:">
+            </div>
+            <!--Number of lives-->
+            <div class="lives-settings">
+                <span class="individual-option">
+                    <input type="radio" name="lives-setting" value="easy" class="lives-setting" id="easy">
+                    <label for="easy">Easy (15 lives)</label>
+                </span>
+                <span class="individual-option">
+                    <input type="radio" name="lives-setting" value="normal" class="lives-setting" id="normal" checked>
+                    <label for="easy">Normal (10 lives)</label>
+                </span>
+                <span class="individual-option">
+                    <input type="radio" name="lives-setting" value="hard" class="lives-setting" id="hard">
+                    <label for="easy">Hard (6 lives)</label>
+                </span>
+                <input type="radio" name="lives-setting" value="custom-lives" class="lives-setting" id="custom-lives">
+                <label for="custom-lives">Custom Lives</label>
+                <input type="number" class="lives-setting" id="custom-lives-input" placeholder="Enter custom lives here">
+            </div>
+            <!--Hint or nah-->
+            <div class="hint-select">
+                <input type="checkbox" name="hint" value="hint" id="hint-checkbox" checked>
+                <label for="hint">Hint</label>
+                <input type="text" class="custom-hint" id="custom-hint-input" placeholder="Enter custom hint here">
+            </div>
+            <button id="start-game">Start Game</button>
+        </div>
+        <!--Guesssed characters-->
+        <div class="used-words">
+            <p id="used-words">Used characters/words: </p>
+        </div>
+        <div class="hangman-guy" id="hangman-guy">
+            <span id="hangman-icon1"></span>
+            <span id="hangman-icon2"></span>
+            <span id="hangman-icon3"></span>
+            <span id="hangman-icon4"></span>
+            <span id="hangman-icon5"></span>
+            <span id="hangman-icon6"></span>
+            <span id="hangman-icon7"></span>
+            <span id="hangman-icon8"></span>
+            <span id="hangman-icon9"></span>
+            <span id="hangman-icon10"></span>
+            <span id="hangman-icon11"></span>
+            <span id="hangman-icon12"></span>
+            <span id="hangman-icon13"></span>
+            <span id="hangman-icon14"></span>
+            <span id="hangman-icon15"></span>
+            <span id="hangman-icon16"></span> <!--overflow failsafe-->
+        </div>
+        <!--if custom lives, then show custom lives as a word element (Boring!)-->
+        <div class="custom-lives">
+            <p id="custom-lives-display">Lives left: </span></p>
+        </div>
+        <!--Word that player(s) need(s) to guess-->
+        <div class="guess-box">
+            <p id="guess-box"></p>
+        </div>
+        <!--element that displays the hint-->
+        <div class="hint">
+            <p id="hint">Hint: </p>
+        </div>
+        <!--Guess type and submit interface-->
+        <div class="guesses">
+            <span id="check-or-x"></span>
+            <input type="text" id="guess-input" placeholder="Guess a letter or word here!">
+            <button id="submit-guess">Submit Guess</button>
+        </div>
+        <p id="win-or-lose"></p>
+        <div class="play-again">
+            <button id="play-again">Play Again</button>
+        </div>
+        <div class="about-game">
+            <p>
+                Hangman is a game where players have to guess a word based off of its length and a hint (optional). You have a limited 
+                number of tries, depending on the difficulty of the game. The game ends once the player(s) guess the word or they run 
+                out of guesses.
+            </p>
+            <p>
+                There are lots of customizable settings for Hangman on FunkyArithmeticGames, such as choosing a word or getting a 
+                randomly generated one, controlling the number of lives, and whether a hint should be given. Have fun by yourself or 
+                with your friends!
+            </p>
+            <p><i>Note: Guessing an incorrect word will result in 2 lives being taken.</i></p>
+            <p><i>Note: Entering custom lives does not allow you to witness my beautiful artwork. Choose wisely.</i></p>
+        </div>
+    </main>
+    <footer>
+        <p>
+            This was probably the hardest of the three games to make. I'm pretty sure my code counts as a warcrime, but it's what it's.
+        </p>
+    </footer>
+    <script src="javascript/hangman.js"></script>
+</body>
+</html>
